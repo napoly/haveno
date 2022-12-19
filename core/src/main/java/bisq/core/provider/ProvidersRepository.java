@@ -104,7 +104,7 @@ public class ProvidersRepository {
                 // If we run in localhost mode we don't have the tor node running, so we need a clearnet host
                 // Use localhost for using a locally running provider
 
-                providers = List.of("http://localhost:8078/", "https://price.haveno.network/");
+                providers = List.of("http://pricenode:8078/", "https://price.haveno.network/", "http://localhost:8078/");
             } else {
                 providers = DEFAULT_NODES;
             }
